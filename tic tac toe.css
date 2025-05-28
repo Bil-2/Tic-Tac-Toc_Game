@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.scoreboard div {
+  background: rgba(255,255,255,0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #1c1c1c;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  color: #00eaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: inset 0 0 10px #000;
+}
+
+.cell:hover {
+  background: #292929;
+  box-shadow: 0 0 10px #00eaff;
+}
+
+#status {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+button {
+  background: #00eaff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #00bcd4;
+}
